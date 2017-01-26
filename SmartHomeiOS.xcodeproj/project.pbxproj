@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		3BBFED821E2775ED00299828 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFED811E2775ED00299828 /* AppDelegate.swift */; };
-		3BBFED841E2775ED00299828 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFED831E2775ED00299828 /* ViewController.swift */; };
 		3BBFED871E2775ED00299828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBFED851E2775ED00299828 /* Main.storyboard */; };
 		3BBFED891E2775ED00299828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BBFED881E2775ED00299828 /* Assets.xcassets */; };
 		3BBFED8C1E2775ED00299828 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBFED8A1E2775ED00299828 /* LaunchScreen.storyboard */; };
 		3BBFED971E2775ED00299828 /* SmartHomeiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFED961E2775ED00299828 /* SmartHomeiOSTests.swift */; };
 		3BBFEDA21E2775ED00299828 /* SmartHomeiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFEDA11E2775ED00299828 /* SmartHomeiOSUITests.swift */; };
+		3BBFEDB01E277AB800299828 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFEDAF1E277AB800299828 /* ResetPasswordViewController.swift */; };
+		3BBFEDB41E277AD400299828 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFEDB11E277AD400299828 /* LoginViewController.swift */; };
+		3BBFEDB51E277AD400299828 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFEDB21E277AD400299828 /* HomeViewController.swift */; };
+		3BBFEDB61E277AD400299828 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFEDB31E277AD400299828 /* SignUpViewController.swift */; };
+		3BBFEDBA1E278A5400299828 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BBFEDB91E278A5300299828 /* GoogleService-Info.plist */; };
+		C150DFE6548D09FDF80AE50D /* Pods_SmartHomeiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E871AFD539D0D9596E7D32E3 /* Pods_SmartHomeiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		147622AEE810C55008FDE350 /* Pods-SmartHomeiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHomeiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartHomeiOS/Pods-SmartHomeiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		3BBFED7E1E2775ED00299828 /* SmartHomeiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHomeiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBFED811E2775ED00299828 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3BBFED831E2775ED00299828 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3BBFED861E2775ED00299828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BBFED881E2775ED00299828 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BBFED8B1E2775ED00299828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +52,13 @@
 		3BBFED9D1E2775ED00299828 /* SmartHomeiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartHomeiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBFEDA11E2775ED00299828 /* SmartHomeiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeiOSUITests.swift; sourceTree = "<group>"; };
 		3BBFEDA31E2775ED00299828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BBFEDAF1E277AB800299828 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		3BBFEDB11E277AD400299828 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3BBFEDB21E277AD400299828 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3BBFEDB31E277AD400299828 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3BBFEDB91E278A5300299828 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E871AFD539D0D9596E7D32E3 /* Pods_SmartHomeiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartHomeiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD503FA0F5F8F288C2FEBEFA /* Pods-SmartHomeiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHomeiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartHomeiOS/Pods-SmartHomeiOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C150DFE6548D09FDF80AE50D /* Pods_SmartHomeiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +94,8 @@
 				3BBFED951E2775ED00299828 /* SmartHomeiOSTests */,
 				3BBFEDA01E2775ED00299828 /* SmartHomeiOSUITests */,
 				3BBFED7F1E2775ED00299828 /* Products */,
+				B809B9145536218501D018FF /* Pods */,
+				869287A0A3D05786A88145F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +112,12 @@
 		3BBFED801E2775ED00299828 /* SmartHomeiOS */ = {
 			isa = PBXGroup;
 			children = (
+				3BBFEDB91E278A5300299828 /* GoogleService-Info.plist */,
+				3BBFEDB11E277AD400299828 /* LoginViewController.swift */,
+				3BBFEDB21E277AD400299828 /* HomeViewController.swift */,
+				3BBFEDB31E277AD400299828 /* SignUpViewController.swift */,
+				3BBFEDAF1E277AB800299828 /* ResetPasswordViewController.swift */,
 				3BBFED811E2775ED00299828 /* AppDelegate.swift */,
-				3BBFED831E2775ED00299828 /* ViewController.swift */,
 				3BBFED851E2775ED00299828 /* Main.storyboard */,
 				3BBFED881E2775ED00299828 /* Assets.xcassets */,
 				3BBFED8A1E2775ED00299828 /* LaunchScreen.storyboard */,
@@ -125,6 +144,23 @@
 			path = SmartHomeiOSUITests;
 			sourceTree = "<group>";
 		};
+		869287A0A3D05786A88145F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E871AFD539D0D9596E7D32E3 /* Pods_SmartHomeiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B809B9145536218501D018FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				147622AEE810C55008FDE350 /* Pods-SmartHomeiOS.debug.xcconfig */,
+				FD503FA0F5F8F288C2FEBEFA /* Pods-SmartHomeiOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BBFEDA61E2775ED00299828 /* Build configuration list for PBXNativeTarget "SmartHomeiOS" */;
 			buildPhases = (
+				36AE07C72E4D609D3C0ED922 /* [CP] Check Pods Manifest.lock */,
 				3BBFED7A1E2775ED00299828 /* Sources */,
 				3BBFED7B1E2775ED00299828 /* Frameworks */,
 				3BBFED7C1E2775ED00299828 /* Resources */,
+				063EAC9FCD13DAAD7C46857E /* [CP] Embed Pods Frameworks */,
+				F69BB6312486F3B8224090D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BBFED8C1E2775ED00299828 /* LaunchScreen.storyboard in Resources */,
+				3BBFEDBA1E278A5400299828 /* GoogleService-Info.plist in Resources */,
 				3BBFED891E2775ED00299828 /* Assets.xcassets in Resources */,
 				3BBFED871E2775ED00299828 /* Main.storyboard in Resources */,
 			);
@@ -257,12 +297,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		063EAC9FCD13DAAD7C46857E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartHomeiOS/Pods-SmartHomeiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36AE07C72E4D609D3C0ED922 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F69BB6312486F3B8224090D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartHomeiOS/Pods-SmartHomeiOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3BBFED7A1E2775ED00299828 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BBFED841E2775ED00299828 /* ViewController.swift in Sources */,
+				3BBFEDB61E277AD400299828 /* SignUpViewController.swift in Sources */,
+				3BBFEDB51E277AD400299828 /* HomeViewController.swift in Sources */,
+				3BBFEDB41E277AD400299828 /* LoginViewController.swift in Sources */,
+				3BBFEDB01E277AB800299828 /* ResetPasswordViewController.swift in Sources */,
 				3BBFED821E2775ED00299828 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +504,7 @@
 		};
 		3BBFEDA71E2775ED00299828 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 147622AEE810C55008FDE350 /* Pods-SmartHomeiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X2S37LT7PQ;
@@ -426,6 +518,7 @@
 		};
 		3BBFEDA81E2775ED00299828 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD503FA0F5F8F288C2FEBEFA /* Pods-SmartHomeiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X2S37LT7PQ;
@@ -514,6 +607,7 @@
 				3BBFEDA81E2775ED00299828 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BBFEDA91E2775ED00299828 /* Build configuration list for PBXNativeTarget "SmartHomeiOSTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +616,7 @@
 				3BBFEDAB1E2775ED00299828 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BBFEDAC1E2775ED00299828 /* Build configuration list for PBXNativeTarget "SmartHomeiOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +625,7 @@
 				3BBFEDAE1E2775ED00299828 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
