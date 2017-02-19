@@ -11,6 +11,7 @@ class LoginViewController: UIViewController {
 
 
 //Outlets
+    //comment
 @IBOutlet weak var emailTextField: UITextField!
 @IBOutlet weak var passwordTextField: UITextField!
 
