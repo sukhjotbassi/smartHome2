@@ -9,7 +9,7 @@ import FirebaseAuth
 
 class SignUpViewController: UIViewController {
 
-    //Outlets
+    //Outletss
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
