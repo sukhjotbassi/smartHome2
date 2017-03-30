@@ -18,6 +18,11 @@
 		3BBFEDB51E277AD400299828 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFEDB21E277AD400299828 /* HomeViewController.swift */; };
 		3BBFEDB61E277AD400299828 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFEDB31E277AD400299828 /* SignUpViewController.swift */; };
 		3BBFEDBA1E278A5400299828 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BBFEDB91E278A5300299828 /* GoogleService-Info.plist */; };
+		3BD9C1E01E8A07E400830A26 /* GeotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD9C1DC1E8A07E400830A26 /* GeotificationsViewController.swift */; };
+		3BD9C1E11E8A07E400830A26 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD9C1DD1E8A07E400830A26 /* Utilities.swift */; };
+		3BD9C1E21E8A07E400830A26 /* Geotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD9C1DE1E8A07E400830A26 /* Geotification.swift */; };
+		3BD9C1E31E8A07E400830A26 /* AddGeotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD9C1DF1E8A07E400830A26 /* AddGeotificationViewController.swift */; };
+		3BD9C1EF1E8A13AA00830A26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD9C1EE1E8A13AA00830A26 /* Images.xcassets */; };
 		C150DFE6548D09FDF80AE50D /* Pods_SmartHomeiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E871AFD539D0D9596E7D32E3 /* Pods_SmartHomeiOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +62,11 @@
 		3BBFEDB21E277AD400299828 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3BBFEDB31E277AD400299828 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3BBFEDB91E278A5300299828 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3BD9C1DC1E8A07E400830A26 /* GeotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeotificationsViewController.swift; sourceTree = "<group>"; };
+		3BD9C1DD1E8A07E400830A26 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		3BD9C1DE1E8A07E400830A26 /* Geotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geotification.swift; sourceTree = "<group>"; };
+		3BD9C1DF1E8A07E400830A26 /* AddGeotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGeotificationViewController.swift; sourceTree = "<group>"; };
+		3BD9C1EE1E8A13AA00830A26 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E871AFD539D0D9596E7D32E3 /* Pods_SmartHomeiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartHomeiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD503FA0F5F8F288C2FEBEFA /* Pods-SmartHomeiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHomeiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartHomeiOS/Pods-SmartHomeiOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +122,11 @@
 		3BBFED801E2775ED00299828 /* SmartHomeiOS */ = {
 			isa = PBXGroup;
 			children = (
+				3BD9C1EE1E8A13AA00830A26 /* Images.xcassets */,
+				3BD9C1DC1E8A07E400830A26 /* GeotificationsViewController.swift */,
+				3BD9C1DD1E8A07E400830A26 /* Utilities.swift */,
+				3BD9C1DE1E8A07E400830A26 /* Geotification.swift */,
+				3BD9C1DF1E8A07E400830A26 /* AddGeotificationViewController.swift */,
 				3BBFEDB91E278A5300299828 /* GoogleService-Info.plist */,
 				3BBFEDB11E277AD400299828 /* LoginViewController.swift */,
 				3BBFEDB21E277AD400299828 /* HomeViewController.swift */,
@@ -275,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BBFED8C1E2775ED00299828 /* LaunchScreen.storyboard in Resources */,
+				3BD9C1EF1E8A13AA00830A26 /* Images.xcassets in Resources */,
 				3BBFEDBA1E278A5400299828 /* GoogleService-Info.plist in Resources */,
 				3BBFED891E2775ED00299828 /* Assets.xcassets in Resources */,
 				3BBFED871E2775ED00299828 /* Main.storyboard in Resources */,
@@ -350,8 +366,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BD9C1E31E8A07E400830A26 /* AddGeotificationViewController.swift in Sources */,
 				3BBFEDB61E277AD400299828 /* SignUpViewController.swift in Sources */,
 				3BBFEDB51E277AD400299828 /* HomeViewController.swift in Sources */,
+				3BD9C1E11E8A07E400830A26 /* Utilities.swift in Sources */,
+				3BD9C1E21E8A07E400830A26 /* Geotification.swift in Sources */,
+				3BD9C1E01E8A07E400830A26 /* GeotificationsViewController.swift in Sources */,
 				3BBFEDB41E277AD400299828 /* LoginViewController.swift in Sources */,
 				3BBFEDB01E277AB800299828 /* ResetPasswordViewController.swift in Sources */,
 				3BBFED821E2775ED00299828 /* AppDelegate.swift in Sources */,

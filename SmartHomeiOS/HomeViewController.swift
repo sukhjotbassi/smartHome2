@@ -21,6 +21,8 @@ class HomeViewController: UIViewController {
     }
     
 
+    
+
     @IBAction func logOutAction(sender: AnyObject) {
         if FIRAuth.auth()?.currentUser != nil {
             do {
