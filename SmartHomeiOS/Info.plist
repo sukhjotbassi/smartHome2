@@ -43,5 +43,9 @@
 	</array>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Smart Home Solutions requires access to your phone’s location to notify you when you enter or leave your Geo-Boundary</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Camera is needed to add new trusted user</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>The photos will save into your library and you can access photos from there</string>
 </dict>
 </plist>

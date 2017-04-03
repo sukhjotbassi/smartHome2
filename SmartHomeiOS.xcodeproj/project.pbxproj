@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BB182151E92CB5D0060360B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB182141E92CB5D0060360B /* ViewController.swift */; };
 		3BBFED821E2775ED00299828 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFED811E2775ED00299828 /* AppDelegate.swift */; };
 		3BBFED871E2775ED00299828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBFED851E2775ED00299828 /* Main.storyboard */; };
 		3BBFED891E2775ED00299828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BBFED881E2775ED00299828 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		147622AEE810C55008FDE350 /* Pods-SmartHomeiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHomeiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartHomeiOS/Pods-SmartHomeiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3BB182141E92CB5D0060360B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3BBFED7E1E2775ED00299828 /* SmartHomeiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHomeiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBFED811E2775ED00299828 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BBFED861E2775ED00299828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		3BBFED801E2775ED00299828 /* SmartHomeiOS */ = {
 			isa = PBXGroup;
 			children = (
+				3BB182141E92CB5D0060360B /* ViewController.swift */,
 				3BD9C1EE1E8A13AA00830A26 /* Images.xcassets */,
 				3BD9C1DC1E8A07E400830A26 /* GeotificationsViewController.swift */,
 				3BD9C1DD1E8A07E400830A26 /* Utilities.swift */,
@@ -366,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BB182151E92CB5D0060360B /* ViewController.swift in Sources */,
 				3BD9C1E31E8A07E400830A26 /* AddGeotificationViewController.swift in Sources */,
 				3BBFEDB61E277AD400299828 /* SignUpViewController.swift in Sources */,
 				3BBFEDB51E277AD400299828 /* HomeViewController.swift in Sources */,
