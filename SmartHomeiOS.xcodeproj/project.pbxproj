@@ -135,15 +135,8 @@
 				3B71943D1E95BC450049E841 /* UploadViewController.swift */,
 				3BB182141E92CB5D0060360B /* ViewController.swift */,
 				3BD9C1EE1E8A13AA00830A26 /* Images.xcassets */,
-				3BD9C1DC1E8A07E400830A26 /* GeotificationsViewController.swift */,
-				3BD9C1DD1E8A07E400830A26 /* Utilities.swift */,
-				3BD9C1DE1E8A07E400830A26 /* Geotification.swift */,
-				3BD9C1DF1E8A07E400830A26 /* AddGeotificationViewController.swift */,
-				3BBFEDB91E278A5300299828 /* GoogleService-Info.plist */,
-				3BBFEDB11E277AD400299828 /* LoginViewController.swift */,
-				3BBFEDB21E277AD400299828 /* HomeViewController.swift */,
-				3BBFEDB31E277AD400299828 /* SignUpViewController.swift */,
-				3BBFEDAF1E277AB800299828 /* ResetPasswordViewController.swift */,
+				3BD477911E9619AC0083F0E9 /* GeoLocation */,
+				3BD4778F1E9619150083F0E9 /* Firebase */,
 				3BBFED811E2775ED00299828 /* AppDelegate.swift */,
 				3BBFED851E2775ED00299828 /* Main.storyboard */,
 				3BBFED881E2775ED00299828 /* Assets.xcassets */,
@@ -169,6 +162,29 @@
 				3BBFEDA31E2775ED00299828 /* Info.plist */,
 			);
 			path = SmartHomeiOSUITests;
+			sourceTree = "<group>";
+		};
+		3BD4778F1E9619150083F0E9 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				3BBFEDB11E277AD400299828 /* LoginViewController.swift */,
+				3BBFEDB21E277AD400299828 /* HomeViewController.swift */,
+				3BBFEDB31E277AD400299828 /* SignUpViewController.swift */,
+				3BBFEDAF1E277AB800299828 /* ResetPasswordViewController.swift */,
+			);
+			name = Firebase;
+			sourceTree = "<group>";
+		};
+		3BD477911E9619AC0083F0E9 /* GeoLocation */ = {
+			isa = PBXGroup;
+			children = (
+				3BD9C1DC1E8A07E400830A26 /* GeotificationsViewController.swift */,
+				3BD9C1DD1E8A07E400830A26 /* Utilities.swift */,
+				3BD9C1DE1E8A07E400830A26 /* Geotification.swift */,
+				3BD9C1DF1E8A07E400830A26 /* AddGeotificationViewController.swift */,
+				3BBFEDB91E278A5300299828 /* GoogleService-Info.plist */,
+			);
+			name = GeoLocation;
 			sourceTree = "<group>";
 		};
 		869287A0A3D05786A88145F7 /* Frameworks */ = {

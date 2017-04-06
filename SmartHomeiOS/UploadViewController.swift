@@ -21,6 +21,7 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate {
 
     @IBOutlet var progressView: UIProgressView!
     @IBOutlet var statusLabel: UILabel!
+    @IBOutlet var Emoji: UILabel!
 
     var completionHandler: AWSS3TransferUtilityUploadCompletionHandlerBlock?
     var progressBlock: AWSS3TransferUtilityProgressBlock?
@@ -55,14 +56,32 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate {
                 }
                 else{
                     self.statusLabel.text = "Success"
-                }
-            })
+                    E_Count = E_Count + 1;
+                    
+                        if E_Count == 1 {
+                            self.Emoji.text = "😡"
+                        }
+                        else if E_Count == 2 {
+                            self.Emoji.text = "😳"
+                        }
+                        else if E_Count == 3 {
+                            self.Emoji.text = "☹️"
+                        }
+                        else if E_Count == 4 {
+                            self.Emoji.text = "😬"
+                        }
+                        else if E_Count == 5 {
+                            self.Emoji.text = "😜"
+                        }
+                    
+                }})
         }
     }
 
     @IBAction func selectAndUpload(_ sender: UIButton) {
         imagePicker.allowsEditing = false
-        imagePicker.sourceType = .photoLibrary
+        //imagePicker.sourceType = .photoLibrary
+        imagePicker.sourceType = .camera
         
         present(imagePicker, animated: true, completion: nil)
     }
@@ -74,8 +93,8 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate {
         transferUtility.uploadData(
             data,
             bucket: S3BucketName,
-            key: S3UploadKeyName,
-            contentType: "image/png",
+            key: "\(Counter)Image",
+            contentType: "image/jpeg",
             expression: expression,
             completionHandler: completionHandler).continueWith { (task) -> AnyObject! in
                 if let error = task.error {
@@ -85,6 +104,7 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate {
                 
                 if let _ = task.result {
                     self.statusLabel.text = "Generating Upload File"
+                    Counter = Counter + 1;
                     print("Upload Starting!")
                     // Do something with uploadTask.
                 }

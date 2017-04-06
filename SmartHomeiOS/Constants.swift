@@ -19,4 +19,6 @@ import AWSCore
 //WARNING: To run this sample correctly, you must set the following constants.
 let S3BucketName: String = "smarthomesolutionsbucket" // Update this to your bucket name
 let S3DownloadKeyName: String = "test-image.png"
-let S3UploadKeyName: String = "test-image.png"
+let S3UploadKeyName: String = "image.jpeg";
+var Counter = 100;
+var E_Count = 0;

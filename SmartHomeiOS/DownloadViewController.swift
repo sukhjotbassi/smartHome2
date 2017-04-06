@@ -67,6 +67,7 @@ class DownloadViewController: UIViewController{
                 }
             })
         }
+        
 
         transferUtility.downloadData(
             fromBucket: S3BucketName,

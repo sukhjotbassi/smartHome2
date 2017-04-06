@@ -1,12 +1,11 @@
 //
 //  ViewController.swift
-//  SelfieTime
-//
-//  Created by Andrew Seeley on 11/09/2016.
-//  Copyright © 2016 Seemu. All rights reserved.
+
 //
 
 import UIKit
+import AWSS3
+
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
