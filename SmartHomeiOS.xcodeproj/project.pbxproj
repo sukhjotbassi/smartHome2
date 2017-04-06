@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B71943E1E95BC450049E841 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71943B1E95BC450049E841 /* DownloadViewController.swift */; };
+		3B71943F1E95BC450049E841 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71943C1E95BC450049E841 /* Constants.swift */; };
+		3B7194401E95BC450049E841 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71943D1E95BC450049E841 /* UploadViewController.swift */; };
 		3BB182151E92CB5D0060360B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB182141E92CB5D0060360B /* ViewController.swift */; };
 		3BBFED821E2775ED00299828 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFED811E2775ED00299828 /* AppDelegate.swift */; };
 		3BBFED871E2775ED00299828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBFED851E2775ED00299828 /* Main.storyboard */; };
@@ -24,7 +27,7 @@
 		3BD9C1E21E8A07E400830A26 /* Geotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD9C1DE1E8A07E400830A26 /* Geotification.swift */; };
 		3BD9C1E31E8A07E400830A26 /* AddGeotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD9C1DF1E8A07E400830A26 /* AddGeotificationViewController.swift */; };
 		3BD9C1EF1E8A13AA00830A26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD9C1EE1E8A13AA00830A26 /* Images.xcassets */; };
-		C150DFE6548D09FDF80AE50D /* Pods_SmartHomeiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E871AFD539D0D9596E7D32E3 /* Pods_SmartHomeiOS.framework */; };
+		9FD7732026CC06F3C8CB8886 /* Pods_SmartHomeiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4153E39ED85AE68515ADE6E7 /* Pods_SmartHomeiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 
 /* Begin PBXFileReference section */
 		147622AEE810C55008FDE350 /* Pods-SmartHomeiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHomeiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartHomeiOS/Pods-SmartHomeiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3B71943B1E95BC450049E841 /* DownloadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
+		3B71943C1E95BC450049E841 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3B71943D1E95BC450049E841 /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		3BB182141E92CB5D0060360B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3BBFED7E1E2775ED00299828 /* SmartHomeiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHomeiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBFED811E2775ED00299828 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +75,7 @@
 		3BD9C1DE1E8A07E400830A26 /* Geotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geotification.swift; sourceTree = "<group>"; };
 		3BD9C1DF1E8A07E400830A26 /* AddGeotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGeotificationViewController.swift; sourceTree = "<group>"; };
 		3BD9C1EE1E8A13AA00830A26 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E871AFD539D0D9596E7D32E3 /* Pods_SmartHomeiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartHomeiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4153E39ED85AE68515ADE6E7 /* Pods_SmartHomeiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartHomeiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD503FA0F5F8F288C2FEBEFA /* Pods-SmartHomeiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHomeiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartHomeiOS/Pods-SmartHomeiOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C150DFE6548D09FDF80AE50D /* Pods_SmartHomeiOS.framework in Frameworks */,
+				9FD7732026CC06F3C8CB8886 /* Pods_SmartHomeiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +130,9 @@
 		3BBFED801E2775ED00299828 /* SmartHomeiOS */ = {
 			isa = PBXGroup;
 			children = (
+				3B71943B1E95BC450049E841 /* DownloadViewController.swift */,
+				3B71943C1E95BC450049E841 /* Constants.swift */,
+				3B71943D1E95BC450049E841 /* UploadViewController.swift */,
 				3BB182141E92CB5D0060360B /* ViewController.swift */,
 				3BD9C1EE1E8A13AA00830A26 /* Images.xcassets */,
 				3BD9C1DC1E8A07E400830A26 /* GeotificationsViewController.swift */,
@@ -165,7 +174,7 @@
 		869287A0A3D05786A88145F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E871AFD539D0D9596E7D32E3 /* Pods_SmartHomeiOS.framework */,
+				4153E39ED85AE68515ADE6E7 /* Pods_SmartHomeiOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -369,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7194401E95BC450049E841 /* UploadViewController.swift in Sources */,
 				3BB182151E92CB5D0060360B /* ViewController.swift in Sources */,
 				3BD9C1E31E8A07E400830A26 /* AddGeotificationViewController.swift in Sources */,
 				3BBFEDB61E277AD400299828 /* SignUpViewController.swift in Sources */,
@@ -376,9 +386,11 @@
 				3BD9C1E11E8A07E400830A26 /* Utilities.swift in Sources */,
 				3BD9C1E21E8A07E400830A26 /* Geotification.swift in Sources */,
 				3BD9C1E01E8A07E400830A26 /* GeotificationsViewController.swift in Sources */,
+				3B71943E1E95BC450049E841 /* DownloadViewController.swift in Sources */,
 				3BBFEDB41E277AD400299828 /* LoginViewController.swift in Sources */,
 				3BBFEDB01E277AB800299828 /* ResetPasswordViewController.swift in Sources */,
 				3BBFED821E2775ED00299828 /* AppDelegate.swift in Sources */,
+				3B71943F1E95BC450049E841 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

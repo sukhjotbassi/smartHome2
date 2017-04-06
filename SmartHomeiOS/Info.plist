@@ -47,5 +47,29 @@
 	<string>Camera is needed to add new trusted user</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>The photos will save into your library and you can access photos from there</string>
+	<key>AWS</key>
+	<dict>
+		<key>CredentialsProvider</key>
+		<dict>
+			<key>CognitoIdentity</key>
+			<dict>
+				<key>Default</key>
+				<dict>
+					<key>PoolId</key>
+					<string>us-west-2:eb87de1e-1d08-4e32-9ae5-bff08406acd0</string>
+					<key>Region</key>
+					<string>us-west-2</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>S3TransferUtility</key>
+		<dict>
+			<key>Default</key>
+			<dict>
+				<key>Region</key>
+				<string>us-west-2</string>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>

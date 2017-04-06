@@ -38,12 +38,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sWX-1N-KFc">
-                                <rect key="frame" x="87" y="356.5" width="201" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbi-vz-ndh">
                                 <rect key="frame" x="168.5" y="394.5" width="38" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -79,6 +73,12 @@
                                     <segue destination="hxY-Ju-URQ" kind="presentation" id="d6J-DN-fqE"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sWX-1N-KFc">
+                                <rect key="frame" x="87" y="356" width="201" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -284,7 +284,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <state key="normal" title="FRONT DOOR"/>
                                 <connections>
-                                    <segue destination="O0T-7e-C9j" kind="presentation" id="Hc3-4J-T9H"/>
+                                    <segue destination="zs7-dv-n2p" kind="presentation" id="Oey-oq-eko"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -299,7 +299,7 @@
         <scene sceneID="SBH-Cx-5mM">
             <objects>
                 <navigationController storyboardIdentifier="Nav1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zil-ne-6H3" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="rZa-f7-mT9">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="rZa-f7-mT9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -364,7 +364,7 @@
         <scene sceneID="TqG-ay-CuJ">
             <objects>
                 <navigationController id="GEL-2e-oNl" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="FTd-Q7-ESt">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="FTd-Q7-ESt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -594,12 +594,152 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dzn-4g-rcW" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3204" y="553"/>
+            <point key="canvasLocation" x="3150" y="-565"/>
+        </scene>
+        <!--Upload-->
+        <scene sceneID="Qum-K8-Jgy">
+            <objects>
+                <viewController id="tIk-LK-Ose" customClass="UploadViewController" customModule="SmartHomeiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Py3-p9-7ii"/>
+                        <viewControllerLayoutGuide type="bottom" id="NlR-Qz-ljd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ztQ-mV-kLc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HaR-Ru-1kc">
+                                <rect key="frame" x="16" y="40" width="343" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Select Image and Upload">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectAndUpload:" destination="tIk-LK-Ose" eventType="touchUpInside" id="AoW-sa-lLR"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tsF-bk-ing">
+                                <rect key="frame" x="16" y="89" width="343" height="2"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jQ-uq-1OQ">
+                                <rect key="frame" x="16" y="111" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HaR-Ru-1kc" firstAttribute="leading" secondItem="tsF-bk-ing" secondAttribute="leading" id="C6N-dm-WDf"/>
+                            <constraint firstItem="7jQ-uq-1OQ" firstAttribute="top" secondItem="tsF-bk-ing" secondAttribute="bottom" constant="20" id="FPJ-Y6-QI4"/>
+                            <constraint firstItem="HaR-Ru-1kc" firstAttribute="leading" secondItem="ztQ-mV-kLc" secondAttribute="leadingMargin" id="I6F-Z6-HmA"/>
+                            <constraint firstItem="HaR-Ru-1kc" firstAttribute="trailing" secondItem="tsF-bk-ing" secondAttribute="trailing" id="OcN-JB-1pt"/>
+                            <constraint firstItem="HaR-Ru-1kc" firstAttribute="trailing" secondItem="ztQ-mV-kLc" secondAttribute="trailingMargin" id="XxN-HM-g5s"/>
+                            <constraint firstItem="tsF-bk-ing" firstAttribute="leading" secondItem="7jQ-uq-1OQ" secondAttribute="leading" id="dFt-8r-M5f"/>
+                            <constraint firstItem="HaR-Ru-1kc" firstAttribute="top" secondItem="Py3-p9-7ii" secondAttribute="bottom" constant="20" id="f1d-FW-gMg"/>
+                            <constraint firstItem="tsF-bk-ing" firstAttribute="trailing" secondItem="7jQ-uq-1OQ" secondAttribute="trailing" id="hYN-YX-qOl"/>
+                            <constraint firstItem="tsF-bk-ing" firstAttribute="top" secondItem="HaR-Ru-1kc" secondAttribute="bottom" constant="16" id="iaG-AL-lKc"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Upload" image="first" id="PVu-Dc-XOO"/>
+                    <connections>
+                        <outlet property="progressView" destination="tsF-bk-ing" id="tXc-EH-ocC"/>
+                        <outlet property="statusLabel" destination="7jQ-uq-1OQ" id="tsm-EI-jty"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6cb-KZ-ecM" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4671" y="-440"/>
+        </scene>
+        <!--Download-->
+        <scene sceneID="xuP-bp-h6r">
+            <objects>
+                <viewController id="oS2-Jl-umX" customClass="DownloadViewController" customModule="SmartHomeiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Rm-z6-cOV"/>
+                        <viewControllerLayoutGuide type="bottom" id="SuH-h5-5SX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="09J-zw-DdU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKl-wx-1C8">
+                                <rect key="frame" x="16" y="42" width="343" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Start Downloading Uploaded Image">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="oS2-Jl-umX" eventType="touchUpInside" id="bd3-IN-1jr"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rGb-7q-QE1">
+                                <rect key="frame" x="16" y="89" width="343" height="2"/>
+                            </progressView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kSD-uV-rDg">
+                                <rect key="frame" x="16" y="166" width="343" height="385"/>
+                                <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYx-us-4MQ">
+                                <rect key="frame" x="16" y="110" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SuH-h5-5SX" firstAttribute="top" secondItem="kSD-uV-rDg" secondAttribute="bottom" constant="67" id="C2J-UO-vL1"/>
+                            <constraint firstItem="rGb-7q-QE1" firstAttribute="trailing" secondItem="09J-zw-DdU" secondAttribute="trailingMargin" id="CYr-eg-cre"/>
+                            <constraint firstItem="rGb-7q-QE1" firstAttribute="leading" secondItem="eYx-us-4MQ" secondAttribute="leading" id="ZRB-km-3UC"/>
+                            <constraint firstItem="eYx-us-4MQ" firstAttribute="trailing" secondItem="kSD-uV-rDg" secondAttribute="trailing" id="aKU-Ab-VoN"/>
+                            <constraint firstItem="kSD-uV-rDg" firstAttribute="top" secondItem="eYx-us-4MQ" secondAttribute="bottom" constant="35" id="bBf-XH-39V"/>
+                            <constraint firstItem="BKl-wx-1C8" firstAttribute="leading" secondItem="rGb-7q-QE1" secondAttribute="leading" id="dM2-IZ-A19"/>
+                            <constraint firstItem="eYx-us-4MQ" firstAttribute="top" secondItem="rGb-7q-QE1" secondAttribute="bottom" constant="19" id="jvq-Ha-f2K"/>
+                            <constraint firstItem="rGb-7q-QE1" firstAttribute="trailing" secondItem="eYx-us-4MQ" secondAttribute="trailing" id="p0l-ar-uTE"/>
+                            <constraint firstItem="rGb-7q-QE1" firstAttribute="top" secondItem="BKl-wx-1C8" secondAttribute="bottom" constant="14" id="pTM-Od-hCR"/>
+                            <constraint firstItem="BKl-wx-1C8" firstAttribute="trailing" secondItem="rGb-7q-QE1" secondAttribute="trailing" id="qXR-pi-Ahu"/>
+                            <constraint firstItem="eYx-us-4MQ" firstAttribute="leading" secondItem="kSD-uV-rDg" secondAttribute="leading" id="rFF-oW-GpK"/>
+                            <constraint firstItem="BKl-wx-1C8" firstAttribute="top" secondItem="8Rm-z6-cOV" secondAttribute="bottom" constant="22" id="wIJ-uO-AM5"/>
+                            <constraint firstItem="BKl-wx-1C8" firstAttribute="leading" secondItem="09J-zw-DdU" secondAttribute="leadingMargin" id="xbB-nj-IKI"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Download" image="second" id="ekN-u6-FXs"/>
+                    <connections>
+                        <outlet property="imageView" destination="kSD-uV-rDg" id="1jV-e0-oA3"/>
+                        <outlet property="progressView" destination="rGb-7q-QE1" id="fVZ-uU-VNp"/>
+                        <outlet property="statusLabel" destination="eYx-us-4MQ" id="XLi-PN-wap"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QOB-a9-YDW" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4673" y="239"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0Oi-rY-Kw6">
+            <objects>
+                <tabBarController id="zs7-dv-n2p" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="sXv-Gk-O7i">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tIk-LK-Ose" kind="relationship" relationship="viewControllers" id="x6P-YZ-qQu"/>
+                        <segue destination="oS2-Jl-umX" kind="relationship" relationship="viewControllers" id="KTr-Mg-zvi"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l6E-My-Kzy" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3922" y="-120"/>
         </scene>
     </scenes>
     <resources>
         <image name="AddPin" width="75" height="75"/>
         <image name="CurrentLocation" width="15" height="15"/>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="beR-1q-6vA"/>

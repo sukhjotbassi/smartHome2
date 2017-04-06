@@ -1,4 +1,7 @@
 PODS:
+  - AWSCore (2.5.3)
+  - AWSS3 (2.5.3):
+    - AWSCore (= 2.5.3)
   - Firebase/Auth (3.11.0):
     - Firebase/Core
     - FirebaseAuth (= 3.1.0)
@@ -35,10 +38,13 @@ PODS:
   - GTMSessionFetcher/Core (1.1.8)
 
 DEPENDENCIES:
+  - AWSS3 (~> 2.5.0)
   - Firebase/Auth
   - Firebase/Core
 
 SPEC CHECKSUMS:
+  AWSCore: 344e21892790650cf902246d436402257a545bde
+  AWSS3: 88095d68f9d588eaa042d7f502f350234f98f606
   Firebase: b8134e285eb33201115bc688bc5d7f112923bc1f
   FirebaseAnalytics: 9c67af0ebeb8d2146c9b4ea2616439affa947b58
   FirebaseAuth: b436e4ecebe068bf8e8c6e4e29de5756ffe7ee24
@@ -49,6 +55,6 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
 
-PODFILE CHECKSUM: cc96ecbddad8e8a2f0e15ff6718ec4d208db9bfe
+PODFILE CHECKSUM: d8a68b37e2fc64977f7532cc6b3e07ea5c8aa942
 
 COCOAPODS: 1.2.0.beta.3
