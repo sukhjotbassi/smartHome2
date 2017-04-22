@@ -103,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tN7-MN-Sdg" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14" y="95"/>
+            <point key="canvasLocation" x="-825" y="204"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="Edj-Iz-mGG">
@@ -176,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GaQ-XU-G4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13.6" y="989.95502248875573"/>
+            <point key="canvasLocation" x="385" y="204"/>
         </scene>
         <!--Reset Password View Controller-->
         <scene sceneID="pFA-kg-ZF1">
@@ -237,7 +237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jkC-X5-2kD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1097" y="63"/>
+            <point key="canvasLocation" x="-215" y="204"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="51j-fk-Jwd">
@@ -275,7 +275,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <state key="normal" title="GARAGE"/>
                                 <connections>
-                                    <segue destination="Zil-ne-6H3" kind="presentation" id="6c2-a7-ZeN"/>
+                                    <segue destination="Nco-3F-uag" kind="presentation" id="tda-VJ-YY9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7I-K0-EaU">
@@ -328,7 +328,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V3H-a2-pbv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3195" y="565"/>
+            <point key="canvasLocation" x="3649" y="553"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SBH-Cx-5mM">
@@ -346,7 +346,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vte-v8-ehk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14" y="1708"/>
+            <point key="canvasLocation" x="-956" y="2203"/>
         </scene>
         <!--Geo-Boundary (0)-->
         <scene sceneID="v6I-iJ-8gn">
@@ -393,7 +393,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k9S-9t-X3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="729" y="1708"/>
+            <point key="canvasLocation" x="-313" y="2203"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TqG-ay-CuJ">
@@ -411,7 +411,59 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dvu-9P-fv2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1377" y="1701"/>
+            <point key="canvasLocation" x="335" y="2195"/>
+        </scene>
+        <!--Control Pi View Controller-->
+        <scene sceneID="ruJ-wd-oo3">
+            <objects>
+                <viewController id="Nco-3F-uag" customClass="ControlPiViewController" customModule="SmartHomeiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5HC-XX-URD"/>
+                        <viewControllerLayoutGuide type="bottom" id="dC4-Yw-8zy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Iww-rU-DVF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWI-5A-vAk">
+                                <rect key="frame" x="0.0" y="561" width="385" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="View/Add GeoBoundary"/>
+                                <connections>
+                                    <segue destination="Zil-ne-6H3" kind="presentation" id="SGo-6j-Y5L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PyH-by-bcK">
+                                <rect key="frame" x="49" y="50" width="282" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="Connect To Garage"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyy-fO-vW2">
+                                <rect key="frame" x="84" y="110" width="207" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="Open"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qp2-PF-VQx">
+                                <rect key="frame" x="84" y="187" width="207" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="Close"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonClose" destination="Qp2-PF-VQx" id="xmD-uJ-zMv"/>
+                        <outlet property="buttonConnect" destination="PyH-by-bcK" id="D3J-ar-h5K"/>
+                        <outlet property="buttonOpen" destination="wyy-fO-vW2" id="VXU-UD-bov"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bL6-Fu-V74" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="778" y="1370"/>
         </scene>
         <!--Add Geo-Boundary-->
         <scene sceneID="pIa-ls-kpQ">
@@ -578,7 +630,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2BP-Mc-16I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2236" y="1701"/>
+            <point key="canvasLocation" x="1020" y="2195"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8uF-u2-5sR">
@@ -629,7 +681,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dzn-4g-rcW" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3150" y="-565"/>
+            <point key="canvasLocation" x="2977" y="-870"/>
         </scene>
         <!--Upload-->
         <scene sceneID="Qum-K8-Jgy">
@@ -663,14 +715,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="😀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTj-I5-PTv">
-                                <rect key="frame" x="143" y="255" width="146" height="156"/>
+                                <rect key="frame" x="122" y="263" width="146" height="156"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="130"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="HaR-Ru-1kc" firstAttribute="leading" secondItem="tsF-bk-ing" secondAttribute="leading" id="C6N-dm-WDf"/>
                             <constraint firstItem="7jQ-uq-1OQ" firstAttribute="top" secondItem="tsF-bk-ing" secondAttribute="bottom" constant="20" id="FPJ-Y6-QI4"/>
@@ -692,7 +744,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6cb-KZ-ecM" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4332" y="-94"/>
+            <point key="canvasLocation" x="4647" y="49"/>
         </scene>
         <!--Download-->
         <scene sceneID="xuP-bp-h6r">
@@ -756,7 +808,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QOB-a9-YDW" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2358" y="-565"/>
+            <point key="canvasLocation" x="2327" y="-870"/>
         </scene>
     </scenes>
     <resources>
@@ -766,8 +818,8 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="V5Z-ei-lQN"/>
-        <segue reference="beR-1q-6vA"/>
+        <segue reference="jCO-ed-QLw"/>
         <segue reference="d7R-4T-WIa"/>
+        <segue reference="zck-D5-27A"/>
     </inferredMetricsTieBreakers>
 </document>

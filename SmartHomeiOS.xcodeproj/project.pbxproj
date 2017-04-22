@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B6A4CFB1EAC05BB0024D44A /* ControlPiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6A4CFA1EAC05BB0024D44A /* ControlPiViewController.swift */; };
 		3B71943E1E95BC450049E841 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71943B1E95BC450049E841 /* DownloadViewController.swift */; };
 		3B71943F1E95BC450049E841 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71943C1E95BC450049E841 /* Constants.swift */; };
 		3B7194401E95BC450049E841 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71943D1E95BC450049E841 /* UploadViewController.swift */; };
@@ -49,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		147622AEE810C55008FDE350 /* Pods-SmartHomeiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHomeiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartHomeiOS/Pods-SmartHomeiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3B6A4CFA1EAC05BB0024D44A /* ControlPiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlPiViewController.swift; sourceTree = "<group>"; };
 		3B71943B1E95BC450049E841 /* DownloadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
 		3B71943C1E95BC450049E841 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3B71943D1E95BC450049E841 /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				3B71943C1E95BC450049E841 /* Constants.swift */,
 				3B71943D1E95BC450049E841 /* UploadViewController.swift */,
 				3BB182141E92CB5D0060360B /* ViewController.swift */,
+				3B6A4CFA1EAC05BB0024D44A /* ControlPiViewController.swift */,
 				3BD9C1EE1E8A13AA00830A26 /* Images.xcassets */,
 				3BD477911E9619AC0083F0E9 /* GeoLocation */,
 				3BD4778F1E9619150083F0E9 /* Firebase */,
@@ -401,6 +404,7 @@
 				3BBFEDB51E277AD400299828 /* HomeViewController.swift in Sources */,
 				3BD9C1E11E8A07E400830A26 /* Utilities.swift in Sources */,
 				3BD9C1E21E8A07E400830A26 /* Geotification.swift in Sources */,
+				3B6A4CFB1EAC05BB0024D44A /* ControlPiViewController.swift in Sources */,
 				3BD9C1E01E8A07E400830A26 /* GeotificationsViewController.swift in Sources */,
 				3B71943E1E95BC450049E841 /* DownloadViewController.swift in Sources */,
 				3BBFEDB41E277AD400299828 /* LoginViewController.swift in Sources */,
