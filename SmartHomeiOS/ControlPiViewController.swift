@@ -23,8 +23,8 @@ class ControlPiViewController: UIViewController, StreamDelegate {
     var labelConnection : UILabel!
     
     //Socket server
-    let addr = "192.168.2.2"
-    let port = 9876
+    //let addr = "192.168.2.2"
+    //let port = 9876
     
     //Network variables
     var inStream : InputStream?
@@ -39,6 +39,7 @@ class ControlPiViewController: UIViewController, StreamDelegate {
         ButtonSetup()
         
         LabelSetup()
+        
     }
     
     //Button Functions
@@ -47,18 +48,18 @@ class ControlPiViewController: UIViewController, StreamDelegate {
 //        buttonConnect.setTitle("Connect to server", for: UIControlState())
 //        buttonConnect.setTitleColor(UIColor.blue, for: UIControlState())
 //        buttonConnect.setTitleColor(UIColor.cyan, for: UIControlState.highlighted)
-        buttonConnect.addTarget(self, action: "btnConnectPressed:", for: UIControlEvents.touchUpInside)
+        buttonConnect.addTarget(self, action: #selector(ControlPiViewController.btnConnectPressed(_:)), for: UIControlEvents.touchUpInside)
         //view.addSubview(buttonConnect)
 //        
 //        let buttoniPhone = UIButton(frame: CGRect(x: 20, y: 100, width: 300, height: 30))
 //        buttoniPhone.setTitle("Send \"This is iPhone\"", for: UIControlState())
 //        buttoniPhone.setTitleColor(UIColor.blue, for: UIControlState())
 //        buttoniPhone.setTitleColor(UIColor.cyan, for: UIControlState.highlighted)
-        buttonOpen.addTarget(self, action: "btnOpenPressed:", for: UIControlEvents.touchUpInside)
+        buttonOpen.addTarget(self, action: #selector(ControlPiViewController.btnOpenPressed(_:)), for: UIControlEvents.touchUpInside)
         //view.addSubview(buttoniPhone)
         
         
-        buttonClose.addTarget(self, action: "btnClosePressed:", for: UIControlEvents.touchUpInside)
+        buttonClose.addTarget(self, action: #selector(ControlPiViewController.btnClosePressed(_:)), for: UIControlEvents.touchUpInside)
         
         
         
@@ -122,7 +123,9 @@ class ControlPiViewController: UIViewController, StreamDelegate {
         inStream?.open()
         outStream?.open()
         
+        
         buffer = [UInt8](repeating: 0, count: 200)
+        //print(buffer);
     }
     
     func stream(_ aStream: Stream, handle eventCode: Stream.Event) {
@@ -157,7 +160,32 @@ class ControlPiViewController: UIViewController, StreamDelegate {
                 let bufferStr = NSString(bytes: &buffer, length: buffer.count, encoding: String.Encoding.utf8.rawValue)
                 label.text = bufferStr! as String
                 print(bufferStr!)
-            }
+                //getName()
+//                if(bufferStr! == "1")
+//                {
+//                    notify();
+//                }
+          //      print(bufferStr!)
+//                //1. Create the alert controller.
+//                let alert = UIAlertController(title: "Some Title", message: "Enter a text", preferredStyle: .alert)
+//                
+//                //2. Add the text field. You can configure it however you need.
+//                alert.addTextField { (textField) in
+//                    textField.text = "Some default text"
+//                }
+//                
+//                // 3. Grab the value from the text field, and print it when the user clicks OK.
+//                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
+//                    let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
+//                    print("Text field: \(textField?.text)")
+//                }))
+//                
+//                // 4. Present the alert.
+//                self.present(alert, animated: true, completion: nil)
+//                
+                
+                
+            }//instream
             
         case Stream.Event.hasSpaceAvailable:
             print("HasSpaceAvailable")
@@ -174,7 +202,30 @@ class ControlPiViewController: UIViewController, StreamDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
     
+    
+    
+    func getName(){
+        //1. Create the alert controller.
+        let alert = UIAlertController(title: "Some Title", message: "Enter a text", preferredStyle: .alert)
+        
+        //2. Add the text field. You can configure it however you need.
+        alert.addTextField { (textField) in
+            textField.text = "Some default text"
+        }
+        
+        // 3. Grab the value from the text field, and print it when the user clicks OK.
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
+            let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
+            print("Text field: \(String(describing: textField?.text))")
+        }))
+        
+        // 4. Present the alert.
+        self.present(alert, animated: true, completion: nil)
+        
+        
+    }
+    
+
     
 }

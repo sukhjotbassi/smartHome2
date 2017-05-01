@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pHr-FP-01c">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pHr-FP-01c">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -321,6 +321,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <state key="normal" title="View Camera"/>
+                                <connections>
+                                    <segue destination="8L3-Nh-GqC" kind="presentation" id="ISZ-9e-LmT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -464,6 +467,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bL6-Fu-V74" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="778" y="1370"/>
+        </scene>
+        <!--Notify View Controller-->
+        <scene sceneID="Q8J-Sr-Fud">
+            <objects>
+                <viewController id="8L3-Nh-GqC" customClass="NotifyViewController" customModule="SmartHomeiOS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="loT-DW-qOj"/>
+                        <viewControllerLayoutGuide type="bottom" id="zAK-7r-ABj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rkK-Io-she">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8o-aY-bae">
+                                <rect key="frame" x="166" y="354" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Notify"/>
+                                <connections>
+                                    <action selector="createNotification:" destination="8L3-Nh-GqC" eventType="touchUpInside" id="kW9-23-eY9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IfO-gT-21M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3649" y="1464"/>
         </scene>
         <!--Add Geo-Boundary-->
         <scene sceneID="pIa-ls-kpQ">
@@ -721,6 +752,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XTb-uf-xwm">
+                                <rect key="frame" x="114" y="178" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Your Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBn-Tr-6Md">
+                                <rect key="frame" x="123" y="149" width="129" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04k-0f-oqi">
+                                <rect key="frame" x="169" y="216" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="Enter:" destination="tIk-LK-Ose" eventType="touchUpInside" id="Yz4-4J-wYI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -738,13 +791,14 @@
                     <tabBarItem key="tabBarItem" title="Upload" image="first" id="PVu-Dc-XOO"/>
                     <connections>
                         <outlet property="Emoji" destination="OTj-I5-PTv" id="le6-Is-ytB"/>
+                        <outlet property="Name" destination="XTb-uf-xwm" id="jbQ-Kg-tgO"/>
                         <outlet property="progressView" destination="tsF-bk-ing" id="tXc-EH-ocC"/>
                         <outlet property="statusLabel" destination="7jQ-uq-1OQ" id="tsm-EI-jty"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6cb-KZ-ecM" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4647" y="49"/>
+            <point key="canvasLocation" x="5304.8000000000002" y="203.74812593703149"/>
         </scene>
         <!--Download-->
         <scene sceneID="xuP-bp-h6r">
@@ -819,7 +873,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="jCO-ed-QLw"/>
-        <segue reference="d7R-4T-WIa"/>
-        <segue reference="zck-D5-27A"/>
+        <segue reference="MqV-y1-dHY"/>
+        <segue reference="beR-1q-6vA"/>
     </inferredMetricsTieBreakers>
 </document>

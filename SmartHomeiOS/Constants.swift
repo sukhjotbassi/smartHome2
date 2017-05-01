@@ -20,5 +20,10 @@ import AWSCore
 let S3BucketName: String = "smarthomesolutionsbucket" // Update this to your bucket name
 let S3DownloadKeyName: String = "test-image.png"
 let S3UploadKeyName: String = "image.jpeg";
-var Counter = 100;
+//var Counter = 100;
 var E_Count = 0;
+let addr = "130.65.154.118"
+let port = 9876;
+
+var Counter = 100;
+let defaults = UserDefaults.standard //returns shared defaults object.

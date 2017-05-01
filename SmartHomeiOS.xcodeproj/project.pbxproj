@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B57C78E1EADD15F00ED028A /* NotifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B57C78D1EADD15F00ED028A /* NotifyViewController.swift */; };
 		3B6A4CFB1EAC05BB0024D44A /* ControlPiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6A4CFA1EAC05BB0024D44A /* ControlPiViewController.swift */; };
 		3B71943E1E95BC450049E841 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71943B1E95BC450049E841 /* DownloadViewController.swift */; };
 		3B71943F1E95BC450049E841 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71943C1E95BC450049E841 /* Constants.swift */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		147622AEE810C55008FDE350 /* Pods-SmartHomeiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHomeiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartHomeiOS/Pods-SmartHomeiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3B57C78D1EADD15F00ED028A /* NotifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifyViewController.swift; sourceTree = "<group>"; };
 		3B6A4CFA1EAC05BB0024D44A /* ControlPiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlPiViewController.swift; sourceTree = "<group>"; };
 		3B71943B1E95BC450049E841 /* DownloadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
 		3B71943C1E95BC450049E841 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				3BBFED881E2775ED00299828 /* Assets.xcassets */,
 				3BBFED8A1E2775ED00299828 /* LaunchScreen.storyboard */,
 				3BBFED8D1E2775ED00299828 /* Info.plist */,
+				3B57C78D1EADD15F00ED028A /* NotifyViewController.swift */,
 			);
 			path = SmartHomeiOS;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7194401E95BC450049E841 /* UploadViewController.swift in Sources */,
+				3B57C78E1EADD15F00ED028A /* NotifyViewController.swift in Sources */,
 				3BB182151E92CB5D0060360B /* ViewController.swift in Sources */,
 				3BD9C1E31E8A07E400830A26 /* AddGeotificationViewController.swift in Sources */,
 				3BBFEDB61E277AD400299828 /* SignUpViewController.swift in Sources */,
