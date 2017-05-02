@@ -29,6 +29,7 @@
 		3BD9C1E21E8A07E400830A26 /* Geotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD9C1DE1E8A07E400830A26 /* Geotification.swift */; };
 		3BD9C1E31E8A07E400830A26 /* AddGeotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD9C1DF1E8A07E400830A26 /* AddGeotificationViewController.swift */; };
 		3BD9C1EF1E8A13AA00830A26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD9C1EE1E8A13AA00830A26 /* Images.xcassets */; };
+		3BEB52171EB7E55F00CD3D61 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEB52161EB7E55F00CD3D61 /* WebViewController.swift */; };
 		9FD7732026CC06F3C8CB8886 /* Pods_SmartHomeiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4153E39ED85AE68515ADE6E7 /* Pods_SmartHomeiOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		3BD9C1DE1E8A07E400830A26 /* Geotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geotification.swift; sourceTree = "<group>"; };
 		3BD9C1DF1E8A07E400830A26 /* AddGeotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGeotificationViewController.swift; sourceTree = "<group>"; };
 		3BD9C1EE1E8A13AA00830A26 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3BEB52161EB7E55F00CD3D61 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		4153E39ED85AE68515ADE6E7 /* Pods_SmartHomeiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartHomeiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD503FA0F5F8F288C2FEBEFA /* Pods-SmartHomeiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHomeiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartHomeiOS/Pods-SmartHomeiOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +141,7 @@
 				3B71943D1E95BC450049E841 /* UploadViewController.swift */,
 				3BB182141E92CB5D0060360B /* ViewController.swift */,
 				3B6A4CFA1EAC05BB0024D44A /* ControlPiViewController.swift */,
+				3BEB52161EB7E55F00CD3D61 /* WebViewController.swift */,
 				3BD9C1EE1E8A13AA00830A26 /* Images.xcassets */,
 				3BD477911E9619AC0083F0E9 /* GeoLocation */,
 				3BD4778F1E9619150083F0E9 /* Firebase */,
@@ -415,6 +418,7 @@
 				3BBFEDB01E277AB800299828 /* ResetPasswordViewController.swift in Sources */,
 				3BBFED821E2775ED00299828 /* AppDelegate.swift in Sources */,
 				3B71943F1E95BC450049E841 /* Constants.swift in Sources */,
+				3BEB52171EB7E55F00CD3D61 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

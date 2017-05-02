@@ -22,7 +22,7 @@ let S3DownloadKeyName: String = "test-image.png"
 let S3UploadKeyName: String = "image.jpeg";
 //var Counter = 100;
 var E_Count = 0;
-let addr = "130.65.154.118"
+let addr = "192.168.0.100"
 let port = 9876;
 
 var Counter = 100;

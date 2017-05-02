@@ -18,7 +18,7 @@ import AWSS3
 import AWSCore
 import UserNotifications
 
-var userName: String = "Test"
+var userName: String = "Default"
 
 class UploadViewController: UIViewController, UINavigationControllerDelegate {
 
@@ -68,7 +68,7 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate {
         // Do any additional setup after loading the view, typically from a nib.
 
 
-        getName()
+        //getName()
         self.progressView.progress = 0.0;
         self.statusLabel.text = "Ready"
         self.imagePicker.delegate = self
@@ -119,26 +119,26 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate {
     }
     
     
-    func getName(){
-        //1. Create the alert controller.
-        let alert = UIAlertController(title: "Some Title", message: "Enter a text", preferredStyle: .alert)
-        
-        //2. Add the text field. You can configure it however you need.
-        alert.addTextField { (textField) in
-            textField.text = "Some default text"
-        }
-        
-        // 3. Grab the value from the text field, and print it when the user clicks OK.
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
-            let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
-            print("Text field: \(String(describing: textField?.text))")
-        }))
-        
-        // 4. Present the alert.
-        self.present(alert, animated: true, completion: nil)
-        
-
-    }
+//    func getName(){
+//        //1. Create the alert controller.
+//        let alert = UIAlertController(title: "Some Title", message: "Enter a text", preferredStyle: .alert)
+//        
+//        //2. Add the text field. You can configure it however you need.
+//        alert.addTextField { (textField) in
+//            textField.text = "Some default text"
+//        }
+//        
+//        // 3. Grab the value from the text field, and print it when the user clicks OK.
+//        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
+//            let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
+//            print("Text field: \(String(describing: textField?.text))")
+//        }))
+//        
+//        // 4. Present the alert.
+//        self.present(alert, animated: true, completion: nil)
+//        
+//
+//    }
     
     
     

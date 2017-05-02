@@ -322,7 +322,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <state key="normal" title="View Camera"/>
                                 <connections>
-                                    <segue destination="8L3-Nh-GqC" kind="presentation" id="ISZ-9e-LmT"/>
+                                    <segue destination="Dw9-0B-9Df" kind="presentation" id="nCv-5a-XOf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZP-rb-wKp">
+                                <rect key="frame" x="84" y="549" width="207" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="hxY-Ju-URQ" kind="presentation" id="bJ5-HT-DcP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -494,7 +503,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IfO-gT-21M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3649" y="1464"/>
+            <point key="canvasLocation" x="3852" y="-808"/>
         </scene>
         <!--Add Geo-Boundary-->
         <scene sceneID="pIa-ls-kpQ">
@@ -774,6 +783,24 @@
                                     <action selector="Enter:" destination="tIk-LK-Ose" eventType="touchUpInside" id="Yz4-4J-wYI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMk-QY-ShH">
+                                <rect key="frame" x="124" y="603" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="Enter:" destination="tIk-LK-Ose" eventType="touchUpInside" id="Wj1-O8-FdC"/>
+                                    <segue destination="wgz-ms-mOH" kind="presentation" id="6EN-kR-mh1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0I-x5-trp">
+                                <rect key="frame" x="221" y="603" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <action selector="Enter:" destination="tIk-LK-Ose" eventType="touchUpInside" id="YNa-yp-GoT"/>
+                                    <segue destination="hxY-Ju-URQ" kind="presentation" id="Dl1-5H-eP5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -864,6 +891,39 @@
             </objects>
             <point key="canvasLocation" x="2327" y="-870"/>
         </scene>
+        <!--Web View Controller-->
+        <scene sceneID="KRs-Er-xRF">
+            <objects>
+                <viewController id="Dw9-0B-9Df" customClass="WebViewController" customModule="SmartHomeiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZnU-W1-QLh"/>
+                        <viewControllerLayoutGuide type="bottom" id="rnw-5B-R7S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tl6-ZV-9RN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IfK-tE-UYK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IfK-tE-UYK" firstAttribute="leading" secondItem="Tl6-ZV-9RN" secondAttribute="leading" id="LpP-HL-heW"/>
+                            <constraint firstItem="IfK-tE-UYK" firstAttribute="top" secondItem="Tl6-ZV-9RN" secondAttribute="top" id="RlK-kw-1Wb"/>
+                            <constraint firstItem="rnw-5B-R7S" firstAttribute="top" secondItem="IfK-tE-UYK" secondAttribute="bottom" id="dhN-xo-OKW"/>
+                            <constraint firstAttribute="trailing" secondItem="IfK-tE-UYK" secondAttribute="trailing" id="naW-hO-HLp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webViewTutorial" destination="IfK-tE-UYK" id="9sE-hL-gQc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JVt-fa-PF4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3698" y="1594"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AddPin" width="75" height="75"/>
@@ -875,5 +935,7 @@
         <segue reference="jCO-ed-QLw"/>
         <segue reference="MqV-y1-dHY"/>
         <segue reference="beR-1q-6vA"/>
+        <segue reference="bJ5-HT-DcP"/>
+        <segue reference="6EN-kR-mh1"/>
     </inferredMetricsTieBreakers>
 </document>
