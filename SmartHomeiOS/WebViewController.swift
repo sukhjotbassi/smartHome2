@@ -17,7 +17,7 @@ class WebViewController: UIViewController {
         super.viewDidLoad()
         
         
-        let url = URL(string: "http://192.168.0.100/")
+        let url = URL(string: "http://192.168.0.100:5000/")
 
         if let unwrappedURL = url {
             

@@ -111,7 +111,7 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate {
                             self.Emoji.text = "😬"
                         }
                         else if E_Count == 5 {
-                            self.Emoji.text = "😜"
+                            self.Emoji.text = "😉"
                         }
                     
                 }})
