@@ -548,23 +548,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="garage" translatesAutoresizingMaskIntoConstraints="NO" id="KeA-KC-m1L">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="garage" translatesAutoresizingMaskIntoConstraints="NO" id="KeA-KC-m1L">
                                 <rect key="frame" x="0.0" y="178" width="375" height="310"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="310" id="8ui-fU-LRD"/>
+                                    <constraint firstAttribute="width" constant="375" id="kv8-Ns-sR0"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWI-5A-vAk">
-                                <rect key="frame" x="0.0" y="561" width="385" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWI-5A-vAk">
+                                <rect key="frame" x="0.0" y="591" width="385" height="50"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="29"/>
                                 <state key="normal" title="View/Add GeoBoundary"/>
                                 <connections>
                                     <segue destination="Zil-ne-6H3" kind="presentation" id="SGo-6j-Y5L"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PyH-by-bcK">
-                                <rect key="frame" x="46" y="109" width="282" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PyH-by-bcK">
+                                <rect key="frame" x="62" y="110.5" width="250" height="49"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="28"/>
                                 <state key="normal" title="Connect To Garage"/>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="18254274_10155266026826085_1851927022_n" translatesAutoresizingMaskIntoConstraints="NO" id="0io-V3-8nj">
@@ -587,9 +588,12 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Nw-73-PJ5">
-                                <rect key="frame" x="138" y="544" width="109" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Nw-73-PJ5">
+                                <rect key="frame" x="133" y="521" width="109" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="Kfs-g1-4Ld"/>
+                                    <constraint firstAttribute="height" constant="58" id="QSK-3p-rKC"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                 <state key="normal" title="Home">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -600,6 +604,23 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qWI-5A-vAk" firstAttribute="centerX" secondItem="Iww-rU-DVF" secondAttribute="centerX" constant="5" id="2X9-75-wTf"/>
+                            <constraint firstAttribute="trailing" secondItem="qWI-5A-vAk" secondAttribute="trailing" constant="-10" id="EUu-OX-mO3"/>
+                            <constraint firstItem="KeA-KC-m1L" firstAttribute="centerX" secondItem="Iww-rU-DVF" secondAttribute="centerX" id="KlC-Ll-12n"/>
+                            <constraint firstItem="PyH-by-bcK" firstAttribute="centerY" secondItem="Iww-rU-DVF" secondAttribute="centerY" constant="-198.5" id="Ri0-u7-N65"/>
+                            <constraint firstItem="8Nw-73-PJ5" firstAttribute="leading" secondItem="Iww-rU-DVF" secondAttribute="leadingMargin" constant="117" id="Us1-dp-tcc"/>
+                            <constraint firstItem="8Nw-73-PJ5" firstAttribute="centerY" secondItem="Iww-rU-DVF" secondAttribute="centerY" constant="216.5" id="Wlu-YG-oiq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Nw-73-PJ5" secondAttribute="trailing" constant="117" id="X9v-Tx-ZpD"/>
+                            <constraint firstItem="dC4-Yw-8zy" firstAttribute="top" secondItem="8Nw-73-PJ5" secondAttribute="bottom" constant="88" id="Y6q-qi-z6j"/>
+                            <constraint firstAttribute="trailing" secondItem="KeA-KC-m1L" secondAttribute="trailing" id="b1v-Xd-Mi6"/>
+                            <constraint firstItem="KeA-KC-m1L" firstAttribute="leading" secondItem="Iww-rU-DVF" secondAttribute="leading" id="b8r-ah-OIg"/>
+                            <constraint firstItem="KeA-KC-m1L" firstAttribute="centerY" secondItem="Iww-rU-DVF" secondAttribute="centerY" id="gQi-CY-fli"/>
+                            <constraint firstItem="qWI-5A-vAk" firstAttribute="leading" secondItem="Iww-rU-DVF" secondAttribute="leading" id="htt-5K-Dpz"/>
+                            <constraint firstItem="8Nw-73-PJ5" firstAttribute="centerX" secondItem="Iww-rU-DVF" secondAttribute="centerX" id="nQB-Dh-dWd"/>
+                            <constraint firstItem="PyH-by-bcK" firstAttribute="centerX" secondItem="Iww-rU-DVF" secondAttribute="centerX" id="ojd-g3-9RR"/>
+                            <constraint firstItem="qWI-5A-vAk" firstAttribute="centerY" secondItem="Iww-rU-DVF" secondAttribute="centerY" constant="282.5" id="szO-3q-XNE"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="buttonClose" destination="Qp2-PF-VQx" id="xmD-uJ-zMv"/>
