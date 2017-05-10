@@ -13,6 +13,10 @@ class WebViewController: UIViewController {
     
     @IBOutlet weak var webViewTutorial: UIWebView!
     
+    @IBAction func Back(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "FrontHome")
+        self.present(vc!, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         

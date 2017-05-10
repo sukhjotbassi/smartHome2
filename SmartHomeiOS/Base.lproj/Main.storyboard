@@ -118,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tN7-MN-Sdg" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1017" y="204"/>
+            <point key="canvasLocation" x="-822" y="204"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="Edj-Iz-mGG">
@@ -367,8 +367,8 @@
                                     <action selector="logOutActionWithSender:" destination="hxY-Ju-URQ" eventType="touchUpInside" id="hwF-vQ-YJU"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="18254274_10155266026826085_1851927022_n" translatesAutoresizingMaskIntoConstraints="NO" id="F9m-TZ-tvW">
-                                <rect key="frame" x="16" y="60" width="343" height="25"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="18254274_10155266026826085_1851927022_n" translatesAutoresizingMaskIntoConstraints="NO" id="F9m-TZ-tvW">
+                                <rect key="frame" x="16" y="28" width="343" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="bLZ-h6-D9d"/>
                                     <constraint firstAttribute="width" constant="343" id="ew4-fG-vZS"/>
@@ -418,10 +418,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZP-rb-wKp">
-                                <rect key="frame" x="-20" y="43" width="109" height="44"/>
+                                <rect key="frame" x="133" y="563" width="109" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <state key="normal" title="BACK">
+                                <state key="normal" title="HOME">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -442,7 +442,7 @@
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="18254274_10155266026826085_1851927022_n" translatesAutoresizingMaskIntoConstraints="NO" id="6oX-PZ-zrD">
-                                <rect key="frame" x="37" y="10" width="300" height="25"/>
+                                <rect key="frame" x="37" y="28" width="300" height="25"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
@@ -484,7 +484,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XnC-oz-Vef">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <connections>
                                     <outlet property="delegate" destination="WQY-Je-b5i" id="LWx-D9-lHU"/>
                                 </connections>
@@ -555,7 +555,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWI-5A-vAk">
                                 <rect key="frame" x="0.0" y="561" width="385" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="29"/>
                                 <state key="normal" title="View/Add GeoBoundary"/>
                                 <connections>
                                     <segue destination="Zil-ne-6H3" kind="presentation" id="SGo-6j-Y5L"/>
@@ -586,6 +586,17 @@
                                 <state key="normal" title="CLOSE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Nw-73-PJ5">
+                                <rect key="frame" x="138" y="544" width="109" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Back:" destination="Nco-3F-uag" eventType="touchUpInside" id="FBP-Va-E1w"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -934,9 +945,9 @@
                             <constraint firstItem="HaR-Ru-1kc" firstAttribute="trailing" secondItem="tsF-bk-ing" secondAttribute="trailing" id="OcN-JB-1pt"/>
                             <constraint firstItem="HaR-Ru-1kc" firstAttribute="trailing" secondItem="ztQ-mV-kLc" secondAttribute="trailingMargin" id="XxN-HM-g5s"/>
                             <constraint firstItem="tsF-bk-ing" firstAttribute="leading" secondItem="7jQ-uq-1OQ" secondAttribute="leading" id="dFt-8r-M5f"/>
-                            <constraint firstItem="HaR-Ru-1kc" firstAttribute="top" secondItem="Py3-p9-7ii" secondAttribute="bottom" constant="475" id="f1d-FW-gMg"/>
                             <constraint firstItem="tsF-bk-ing" firstAttribute="trailing" secondItem="7jQ-uq-1OQ" secondAttribute="trailing" id="hYN-YX-qOl"/>
                             <constraint firstItem="tsF-bk-ing" firstAttribute="top" secondItem="HaR-Ru-1kc" secondAttribute="bottom" constant="-439" id="iaG-AL-lKc"/>
+                            <constraint firstItem="HaR-Ru-1kc" firstAttribute="top" secondItem="Py3-p9-7ii" secondAttribute="bottom" constant="475" id="myg-jg-Csz"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="first" id="PVu-Dc-XOO"/>
@@ -1032,6 +1043,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljs-Xb-Uck">
+                                <rect key="frame" x="0.0" y="20" width="109" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Back:" destination="Dw9-0B-9Df" eventType="touchUpInside" id="VmH-AB-fTG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -1047,7 +1069,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVt-fa-PF4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3698" y="1594"/>
+            <point key="canvasLocation" x="3694" y="1303"/>
         </scene>
     </scenes>
     <resources>
@@ -1062,8 +1084,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="bJ5-HT-DcP"/>
-        <segue reference="MqV-y1-dHY"/>
         <segue reference="jCO-ed-QLw"/>
+        <segue reference="MqV-y1-dHY"/>
         <segue reference="beR-1q-6vA"/>
     </inferredMetricsTieBreakers>
 </document>

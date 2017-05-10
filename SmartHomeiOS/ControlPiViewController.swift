@@ -33,6 +33,10 @@ class ControlPiViewController: UIViewController, StreamDelegate {
     //Data received
     var buffer = [UInt8](repeating: 0, count: 200)
     
+    @IBAction func Back(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
+        self.present(vc!, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
