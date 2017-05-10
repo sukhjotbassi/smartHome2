@@ -25,31 +25,38 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet var progressView: UIProgressView!
     @IBOutlet var statusLabel: UILabel!
     @IBOutlet var Emoji: UILabel!
+    @IBOutlet var Back: UIButton!
+    @IBOutlet var Home: UIButton!
     
     @IBOutlet weak var Name: UITextField!
-    //@IBOutlet weak var field: UITextField!
-//    var userName: String = Name.text;
-    
-    
-    
+   
     @IBAction func Enter(_ sender: Any) {
-        
         Name.resignFirstResponder()
         userName = Name.text!
         let alertController = UIAlertController(title: "Saved", message: "Please click on 'Take Selfie' Below.", preferredStyle: .alert)
         
         let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alertController.addAction(defaultAction)
-
+        
         self.present(alertController, animated: true, completion: nil)
         //self.view.endEditing(true)
     }
 
-
   
+    
+    
+    @IBAction func Back(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "FrontHome")
+        self.present(vc!, animated: true, completion: nil)
+
+    }
  
     
-    
+    @IBAction func Home(_ sender: Any) {
+        let vcc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
+        self.present(vcc!, animated: true, completion: nil)
+
+    }
 
    
     
@@ -118,37 +125,9 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate {
         }
     }
     
+
     
-//    func getName(){
-//        //1. Create the alert controller.
-//        let alert = UIAlertController(title: "Some Title", message: "Enter a text", preferredStyle: .alert)
-//        
-//        //2. Add the text field. You can configure it however you need.
-//        alert.addTextField { (textField) in
-//            textField.text = "Some default text"
-//        }
-//        
-//        // 3. Grab the value from the text field, and print it when the user clicks OK.
-//        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
-//            let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
-//            print("Text field: \(String(describing: textField?.text))")
-//        }))
-//        
-//        // 4. Present the alert.
-//        self.present(alert, animated: true, completion: nil)
-//        
-//
-//    }
-    
-    
-    
-    
- 
-    
-    
-    
-    
-    @IBAction func selectAndUpload(_ sender: UIButton) {
+    @IBAction func selectAndUpload(_ sender: Any) {
         imagePicker.allowsEditing = false
         //imagePicker.sourceType = .photoLibrary
         imagePicker.sourceType = .camera
@@ -156,6 +135,9 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate {
         
         present(imagePicker, animated: true, completion: nil)
     }
+    
+    
+    
     
     func uploadImage(with data: Data) {
         let expression = AWSS3TransferUtilityUploadExpression()

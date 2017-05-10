@@ -24,16 +24,20 @@ class HomeViewController: UIViewController {
     
 
     @IBAction func logOutAction(sender: AnyObject) {
-        if FIRAuth.auth()?.currentUser != nil {
-            do {
-                try FIRAuth.auth()?.signOut()
-                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Login")
-                present(vc, animated: true, completion: nil)
-                
-            } catch let error as NSError {
-                print(error.localizedDescription)
-            }
-        }
+//        if FIRAuth.auth()?.currentUser != nil {
+//            do {
+//                try FIRAuth.auth()?.signOut()
+//                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Login")
+//                present(vc, animated: true, completion: nil)
+//                
+//            } catch let error as NSError {
+//                print(error.localizedDescription)
+//            }
+//        }
+//        
+//    }
         
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Login")
+        self.present(vc!, animated: true, completion: nil)
     }
 }
